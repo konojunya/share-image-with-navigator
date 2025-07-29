@@ -9,6 +9,7 @@ shareFileButton.addEventListener("click", async () => {
   const shareData = {
     title: "share remote file",
     text: "this is a remote file",
+    url: "https://example.com",
     files: [file],
   };
 
