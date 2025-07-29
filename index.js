@@ -18,8 +18,8 @@ shareButton.addEventListener("click", async () => {
 
   try {
     await navigator.share(shareData);
-  } catch {
+  } catch (err) {
+    console.error(err);
     alert("Error sharing file");
   }
 });
-
