@@ -1,7 +1,7 @@
 const shareFileButton = document.getElementById("share-file");
 const shareURLButton = document.getElementById("share-url");
 
-const TARGET_URL = "https://share-image-with-navigator.vercel.app/card.png";
+const TARGET_URL = "https://share-image-with-navigator.vercel.app/card.jpeg";
 
 shareFileButton.addEventListener("click", async () => {
   const blob = await fetch(TARGET_URL).then((res) => res.blob());
