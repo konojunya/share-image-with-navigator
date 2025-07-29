@@ -20,6 +20,10 @@ shareButton.addEventListener("click", async () => {
     await navigator.share(shareData);
   } catch (err) {
     console.error(err);
+    if (err.message.includes("canceled")) {
+      alert("canceled");
+      return;
+    }
     alert("Error sharing file");
   }
 });
