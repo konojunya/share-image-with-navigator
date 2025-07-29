@@ -8,7 +8,7 @@ shareFileButton.addEventListener("click", async () => {
   const file = new File([blob], "remote-file.jpg", { type: "image/png" });
   const shareData = {
     title: "share remote file",
-    text: "this is a remote file",
+    text: "this is a remote file\n\nhttps://example.com\n#hashtag",
     url: "https://example.com",
     files: [file],
   };
@@ -33,7 +33,7 @@ shareFileButton.addEventListener("click", async () => {
 shareURLButton.addEventListener("click", async () => {
   const shareData = {
     title: "share remote file",
-    text: "this is a remote file",
+    text: "this is a remote file\n\nhttps://example.com\n#hashtag",
     url: "https://example.com",
   };
 
